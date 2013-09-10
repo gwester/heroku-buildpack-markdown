@@ -16,8 +16,9 @@ for f in $MARKDOWN_FILES; do
   echo "       $f -> $NEWFILE"
   echo -e "<!DOCTYPE html>\n<html>\n<head>\n" > $NEWFILE
   echo -e "<title>Ashbury Mobile Device Management</title>\n" >> $NEWFILE
-  echo -e "<meta name=\"description\" content=\"Essential parenting tools for giving feedback to mobile enabled, socially engaged children\">\n" >> $NEWFILE
-  echo -e "<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\">\n" >> $NEWFILE
+  echo -e "<meta name=\"description\" content=\"Essential parenting tools for giving feedback to mobile enabled, socially engaged children\" />\n" >> $NEWFILE
+  echo -e "<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n" >> $NEWFILE
+  echo -e "<link href=\"/ashbury.css\" media=\"all\" rel=\"stylesheet\" type=\"text/css\" />\n" >> $NEWFILE
   echo -e "</head>\n<body>\n" >> $NEWFILE
   $PERL $ROOT_DIR/opt/Markdown.pl $f >> $NEWFILE
   echo -e "</body>\n</html>" >> $NEWFILE
