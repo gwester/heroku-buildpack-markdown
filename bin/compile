@@ -19,6 +19,7 @@ for f in $MARKDOWN_FILES; do
   echo -e "<meta name=\"description\" content=\"Parental analytics, alerts and intervention capabilities on childrens' mobile phones and tablets.\" />\n" >> $NEWFILE
   echo -e "<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n" >> $NEWFILE
   echo -e "<link href=\"/ashbury.css\" media=\"all\" rel=\"stylesheet\" type=\"text/css\" />\n" >> $NEWFILE
+  echo -e "<link rel=\"icon\" type=\"image/png\" href=\"img/favicon.ico\">\n" >> $NEWFILE
   echo -e "</head>\n<body>\n" >> $NEWFILE
   $PERL $ROOT_DIR/opt/Markdown.pl $f >> $NEWFILE
   echo -e "\n<p><small>© 2013 Ashbury Mobile Device Management, Inc.</small></p>\n" >> $NEWFILE
