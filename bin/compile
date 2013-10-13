@@ -22,7 +22,7 @@ for f in $MARKDOWN_FILES; do
   echo -e "<link rel=\"icon\" type=\"image/png\" href=\"img/favicon.ico\">\n" >> $NEWFILE
   echo -e "</head>\n<body>\n" >> $NEWFILE
   $PERL $ROOT_DIR/opt/Markdown.pl $f >> $NEWFILE
-  echo -e "\n<p><table><tr><td><a href=\"https://www.facebook.com/ParentCloud\"><img src=\"/img/facebook.png\" alt=\"Facebook, Inc., company logo\" title=\"Parent Cloud on Facebook\"/></a></td><td><a href=\"https://twitter.com/ashburymdm\"><img src=\"/img/twitter.png\" alt=\"Twitter, Inc., company logo\" title=\"Parent Cloud on Twitter\" /></a></td></tr></table></p>
+  echo -e "\n<table><tr><td><a href=\"https://www.facebook.com/ParentCloud\"><img src=\"/img/facebook.png\" alt=\"Facebook, Inc., company logo\" title=\"Parent Cloud on Facebook\"/></a></td><td><a href=\"https://twitter.com/ashburymdm\"><img src=\"/img/twitter.png\" alt=\"Twitter, Inc., company logo\" title=\"Parent Cloud on Twitter\" /></a></td></tr></table>
 \n" >> $NEWFILE
   echo -e "<p><small>© 2013 <a href=\"https://www.ashburymdm.com/mission.html\">Ashbury Mobile Device Management, Inc.</a></small></p>\n" >> $NEWFILE
   echo -e "<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-43197923-1', 'ashburymdm.com'); ga('send', 'pageview');</script>\n" >> $NEWFILE
