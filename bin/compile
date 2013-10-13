@@ -22,8 +22,8 @@ for f in $MARKDOWN_FILES; do
   echo -e "<link rel=\"icon\" type=\"image/png\" href=\"img/favicon.ico\">\n" >> $NEWFILE
   echo -e "</head>\n<body>\n" >> $NEWFILE
   echo -e "<a href=\"/index.html\"><img src=\"/img/AMDM.gif\" alt=\"Ashbury MDM corporate logo\" title=\"Ashbury Mobile Device Management, Inc.\" /></a>\n" >> $NEWFILE
-  echo -e "<p>Parental analytics, alerts and intervention capabilities on childrens' mobile phones and tablets" >> $NEWFILE
-  echo -e "<div style=\"margin-left: auto;margin-right: auto;\"><div class=\"createsend-button\" style=\"height:27px;display:inline-block;\" data-listid=\"d/BE/219/12F/F87D2D9745E2F1BC\"></div></div>\n" >> $NEWFILE
+  echo -e "<p>Parental analytics, alerts and intervention capabilities on childrens' mobile phones and tablets</p>" >> $NEWFILE
+  echo -e "<div id=\"pc-campaign-monitor\" style=\"float: left;\"><div class=\"createsend-button\" style=\"height:27px;display:inline-block;\" data-listid=\"d/BE/219/12F/F87D2D9745E2F1BC\"></div></div>\n" >> $NEWFILE
   $PERL $ROOT_DIR/opt/Markdown.pl $f >> $NEWFILE
   echo -e "\n<table><tr><td><a href=\"https://www.facebook.com/ParentCloud\"><img src=\"/img/facebook.png\" alt=\"Facebook, Inc., company logo\" title=\"Parent Cloud on Facebook\"/></a></td><td><a href=\"https://twitter.com/ashburymdm\"><img src=\"/img/twitter.png\" alt=\"Twitter, Inc., company logo\" title=\"Parent Cloud on Twitter\" /></a></td></tr></table>
 \n" >> $NEWFILE
