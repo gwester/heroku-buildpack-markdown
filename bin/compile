@@ -15,8 +15,10 @@ for f in $MARKDOWN_FILES; do
   NEWFILE=${f%.*}.html
   echo "       $f -> $NEWFILE"
   echo -e "<!DOCTYPE html>\n<html>\n<head>\n" > $NEWFILE
-  echo -e "<title>Ashbury Mobile Device Management | Parent Cloud</title>\n" >> $NEWFILE
+  echo -e "<title>Ashbury MDM | Parent Cloud</title>\n" >> $NEWFILE
   echo -e "<meta name=\"description\" content=\"Parent Cloud provides parental analytics, alerts and intervention capabilities on childrens' mobile phones and tablets.\" />\n" >> $NEWFILE
+  echo -e "<meta name=\"keywords\" content=\"parental, control, monitoring, kids, children, mobile, tablet, phone, iphone, android, safety, analytics, cyber, bullying\" />\n" >> $NEWFILE
+  echo -e "<meta name=\"author\" content=\"Ashbury Mobile Device Management, Inc.\" />\n" >> $NEWFILE
   echo -e "<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n" >> $NEWFILE
   echo -e "<link href=\"/ashbury.css\" media=\"all\" rel=\"stylesheet\" type=\"text/css\" />\n" >> $NEWFILE
   echo -e "<link rel=\"icon\" type=\"image/png\" href=\"img/favicon.ico\">\n" >> $NEWFILE
